@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos - Estilo y Moda 365</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding-bottom: 70px;
+        }
+
+        header {
+            background: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        h1 {
+            margin: 10px;
+        }
+
+        .filtros {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .filtros button {
+            background: #222;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 4px;
+            border-radius: 7px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .producto {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .producto h2 {
+            font-size: 18px;
+        }
+
+        .precio {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .calificacion {
+            color: #555;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            background: #222;
+            color: white;
+            padding: 9px;
+            margin: 2px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    
+    <h1>Productos</h1>
+</header>
+
+<section class="filtros">
+
+    <button>Todos</button>
+    <button>Ropa</button>
+    <button>Zapatos</button>
+    <button>Accesorios</button>
+
+</section>
+
+<section class="productos">
+
+    <div class="producto">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.iwDKBfVazAthI--LiVrcIQHaLh?r=0&pid=Api&h=220&P=0"
+        alt="vestido casual">
+        <h2>Vestido casual</h2>
+        <p class="precio">$89.900</p>
+        <p class="calificacion">4.8 (120)</p>
+    </div>
+
+    <div class="producto">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.b-bIpGF5wPhDciRIz4l8cwHaJ3?r=0&pid=Api&h=220&P=0"
+        alt="Blusa elegante">
+        <h2>Blusa elegante</h2>
+        <p class="precio">$59.900</p>
+        <p class="calificacion">4.6 (96)</p>
+    </div>
+
+    <div class="producto">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.NQg8vYV8ChPQCk1TylVNvQHaKf?r=0&pid=Api&h=220&P=0"
+        alt="Pantalon tiro alto">
+        <h2>Pantalón tiro alto</h2>
+        <p class="precio">$79.900</p>
+        <p class="calificacion">4.7 (85)</p>
+    </div>
+
+    <div class="producto">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.WfUzoa30Q0U1AmcBBKLcCQHaHa?r=0&pid=Api&h=220&P=0"
+        alt="chaqueta de cuero">
+        <h2>Chaqueta de cuero</h2>
+        <p class="precio">$129.900</p>
+        <p class="calificacion">4.9 (60)</p>
+    </div>
+
+</section>
+
+<nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="categorias.html">Categorías</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="accesibilidad.html">Accesibilidad</a>
+</nav>
+
+<script src="js/script.js"></script> 
+
+</body>
+</html>

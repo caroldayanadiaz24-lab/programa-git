@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Método de pago - Estilo y Moda 365</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .contenido {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .pago {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #ccc;
+            box-sizing: border-box;
+        }
+
+        .metodo {
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .metodo img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .metodo h2 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .metodo p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 14px;
+        }
+
+        .datos {
+            display: flex;
+            gap: 10px;
+        }
+
+        .datos div {
+            flex: 1;
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 18px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .boton {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 18px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .boton:hover {
+            background-color: #444;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+            Método de pago
+        </h1>
+
+    </header>
+
+
+    <section class="contenido">
+
+        <div class="pago">
+
+
+            <!-- TARJETA -->
+
+            <div class="metodo">
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.a1sDU9ge4W5lRaqnqU30GAHaEo?r=0&pid=Api&h=220&P=0"
+                    alt="Tarjeta de crédito">
+
+                <h2>
+                    Tarjeta de crédito / débito
+                </h2>
+
+
+                <label>
+                    Número de tarjeta
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="0000000000000">
+
+
+                <div class="datos">
+
+                    <div>
+
+                        <label>
+                            Fecha de vencimiento
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="MM/AA">
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            CVV
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="123">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PSE -->
+
+            <div class="metodo">
+
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.dIS5FVR2wu3WtEjSt5g99gHaHa?r=0&pid=Api&h=220&P=0"
+                    alt="PSE">
+
+                <h2>
+                    PSE
+                </h2>
+
+                <p>
+                    Transferencia bancaria
+                </p>
+
+            </div>
+
+
+            <!-- NEQUI -->
+
+            <div class="metodo">
+
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.H8S5LHqJ-eh0mGVqFG1BhgHaEK?r=0&pid=Api&h=220&P=0"
+                    alt="Nequi">
+
+                <h2>
+                    Nequi
+                </h2>
+
+            </div>
+
+
+            <!-- BANCOLOMBIA -->
+
+            <div class="metodo">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.BddugZvRBuGI5_N0hSFD3AHaEK?r=0&pid=Api&h=220&P=0"
+                    alt="Bancolombia">
+
+                <h2>
+                    Bancolombia
+                </h2>
+
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <div class="total">
+
+                <span>
+                    Total a pagar
+                </span>
+
+                <span>
+                    $99.900
+                </span>
+
+            </div>
+
+
+            <!-- BOTÓN -->
+
+            <a
+                href="confirmación.html"
+                class="boton">
+
+                Realizar pago
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio - Estilo y Moda 365</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding-bottom: 80px;
+        }
+
+        header {
+            background-color: rgb(14, 2, 2);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .buscar {
+            width: 90%;
+            padding: 12px;
+            margin-top: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .principal {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .texto {
+            color: #555;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #222;
+            color: white;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-decoration: none;
+        }
+
+        .categorias {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .categoria {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .categoria img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .productos {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .lista {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .producto {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .producto img {
+            width: 100%;
+            max-width: 180px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .producto h3 {
+            font-size: 16px;
+        }
+
+        .precio {
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: white;
+            padding: 12px 5px;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo"
+             src="C:\Users\carol\Downloads\logo.jpg"
+             alt="Logo Estilo y Moda 365">
+             
+        <input class="buscar"
+               type="text"
+               placeholder="Buscar productos...">
+
+    </header>
+
+
+    <section class="principal">
+
+        <h1>Bienvenidos</h1>
+
+        <p class="slogan">
+            Tu estilo, tu mejor versión
+        </p>
+
+        <p class="texto">
+            Ropa, accesorios y mucho más,
+            todo en un solo lugar.
+        </p>
+
+        <a href="productos.html" class="boton">
+            Compra ahora
+        </a>
+
+    </section>
+
+
+    <section class="categorias">
+
+        <div class="categoria">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.7C1FIbscu42Qy7a_cRFn2wHaJ4?r=0&pid=Api&h=220&P=0"
+            alt="Mujer">
+            <p>Mujer</p>
+        </div>
+
+        <div class="categoria">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.6EQKe8HG9Ng-7ZeYFWHiuwHaLF?r=0&pid=Api&h=220&P=0"
+            alt="Hombre">
+            <p>Hombre</p>
+        </div>
+
+        <div class="categoria">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.RmtBRB1QZm6y6vYwA8NLDAHaJQ?r=0&pid=Api&h=220&P=0"
+            alt="Niños">
+            <p>Niños</p>
+        </div>
+
+        <div class="categoria">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.5-KRK6pHCj9uOU8pcMbKtwHaJ3?r=0&pid=Api&h=220&P=0"
+            alt="Zapatos">
+            <p>Zapatos</p>
+        </div>
+
+        <div class="categoria">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.6du2ZXDfnZUrqqNGA3T_swHaHa?r=0&pid=Api&h=220&P=0"
+            alt="Accesorios">
+            <p>Accesorios</p>
+        </div>
+
+    </section>
+
+
+    <section class="productos">
+
+        <h2>Productos destacados</h2>
+
+        <div class="lista">
+
+            <div class="producto">
+
+                <img src="https://tse4.mm.bing.net/th/id/OIP.I5jQPgTiYY5LW20YqtCe7wHaNK?r=0&pid=Api&h=220&P=0"
+                alt="Vestido elegante">
+
+                <h3>Vestido elegante</h3>
+
+                <p class="precio">
+                    $89.900
+                </p>
+
+            </div>
+
+
+            <div class="producto">
+
+                <img src="https://tse1.mm.bing.net/th/id/OIP.y5PsxWQhX209NS_2NeZe4AHaKQ?r=0&pid=Api&h=220&P=0"
+                alt="Chaqueta de cuero">
+
+                <h3>Chaqueta de cuero</h3>
+
+                <p class="precio">
+                    $129.900
+                </p>
+
+            </div>
+
+
+            <div class="producto">
+
+                <img src="https://tse3.mm.bing.net/th/id/OIP.iipozwSYnaeltLMfcGl_nAHaJ2?r=0&pid=Api&h=220&P=0"
+                alt="Zapatos deportivos">
+
+                <h3>Zapatos deportivos</h3>
+
+                <p class="precio">
+                    $79.900
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <nav>
+
+        <a href="inicio.html">
+            Inicio
+        </a>
+
+        <a href="categorias.html">
+            Categorías
+        </a>
+
+        <a href="carrito.html">
+            Carrito
+        </a>
+
+        <a href="perfil.html">
+            Perfil
+        </a>
+
+        <a href="asistente IA.html">
+            Accesibilidad
+        </a>
+
+    </nav>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

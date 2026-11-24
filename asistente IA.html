@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asistente de IA - Estilo y Moda 365</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .asistente {
+            width: 100%;
+            max-width: 380px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #ccc;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0 20px;
+        }
+
+        .saludo {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .texto {
+            color: #555;
+            line-height: 1.4;
+            font-size: 15px;
+            margin: 8px 0;
+        }
+
+        .titulo-opciones {
+            font-size: 20px;
+            margin: 25px 0 15px;
+        }
+
+        .opcion {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 60px;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .opcion:hover {
+            background-color: #f5f5f5;
+        }
+
+        .opcion img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .opcion h2 {
+            font-size: 15px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .entrada {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .boton {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .boton:hover {
+            background-color: #444;
+        }
+
+        .volver {
+            display: block;
+            margin-top: 20px;
+            color: #222;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="asistente">
+
+        <!-- TÍTULO -->
+
+        <h1>
+            Asistente de IA
+        </h1>
+
+
+        <!-- IMAGEN DEL ASISTENTE -->
+
+        <img
+            class="logo"
+            src="https://tse4.mm.bing.net/th/id/OIP.HLDH8cmcQdAGC0M_k_hCtQHaHa?r=0&pid=Api&h=220&P=0"
+            alt="Asistente de IA">
+
+
+        <!-- SALUDO -->
+
+        <p class="saludo">
+            Hola 👋
+        </p>
+
+        <p class="texto">
+            Soy tu asistente de accesibilidad de Estilo y Moda 365.
+        </p>
+
+        <p class="texto">
+            Estoy aquí para ayudarte a utilizar la plataforma
+            de acuerdo con tus necesidades.
+        </p>
+
+
+        <!-- OPCIONES -->
+
+        <h2 class="titulo-opciones">
+            ¿En qué puedo ayudarte?
+        </h2>
+
+
+        <button class="opcion">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/128/8006/8006314.png"
+                alt="Hablar">
+
+            <h2>
+                Hablar con el asistente
+            </h2>
+
+        </button>
+
+
+        <button class="opcion">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/128/2554/2554320.png"
+                alt="Escribir">
+
+            <h2>
+                Escribir una pregunta
+            </h2>
+
+        </button>
+
+
+        <button class="opcion">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/128/16313/16313640.png"
+                alt="Escuchar">
+
+            <h2>
+                Escuchar la información
+            </h2>
+
+        </button>
+
+
+        <button class="opcion">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/128/1634/1634839.png"
+                alt="Aumentar texto">
+
+            <h2>
+                Aumentar el texto
+            </h2>
+
+        </button>
+
+
+        <button class="opcion">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/128/3342/3342137.png"
+                alt="Describir imagen">
+
+            <h2>
+                Describir una imagen
+            </h2>
+
+        </button>
+
+
+        <!-- CAMPO PARA ESCRIBIR -->
+
+        <input
+            class="entrada"
+            type="text"
+            placeholder="Escribir o hablar aquí...">
+
+
+        <!-- BOTÓN ENVIAR -->
+
+        <button class="boton">
+            Enviar
+        </button>
+
+
+        <!-- VOLVER -->
+
+        <a
+            class="volver"
+            href="inicio.html">
+
+            ← Volver a la página principal
+
+        </a>
+
+    </div>
+
+     <script src="js/script.js"></script>
+
+</body>
+
+</html>

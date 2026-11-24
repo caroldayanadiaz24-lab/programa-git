@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear cuenta - Estilo y Moda 365</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .registro {
+            width: 400px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #ccc;
+        }
+
+        .logo {
+            width: 120px;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+
+        .accesibilidad {
+            margin-top: 25px;
+        }
+
+        .accesibilidad h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .opciones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .opcion {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .opcion img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        .opcion input {
+            width: auto;
+            margin-top: 8px;
+        }
+
+        .boton {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cuenta {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cuenta a {
+            color: #222;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="registro">
+
+        <img class="logo"
+             src="C:\Users\carol\Downloads\logo.jpg"
+             alt="Logo Estilo y Moda 365">
+
+        <h1>Crear cuenta</h1>
+
+        <p class="subtitulo">
+            Completa tus datos para comenzar
+        </p>
+
+
+        <label>Nombres</label>
+        <input type="text" placeholder="Ingrese sus nombres">
+
+
+        <label>Apellidos</label>
+        <input type="text" placeholder="Ingrese sus apellidos">
+
+
+        <label>Número de identificación</label>
+        <input type="text" placeholder="Ingrese su número">
+
+
+        <label>Fecha de nacimiento</label>
+        <input type="date">
+
+
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="Ingrese su correo">
+
+
+        <label>Contraseña</label>
+        <input type="password" placeholder="Ingrese su contraseña">
+
+
+        <label>Confirma contraseña</label>
+        <input type="password" placeholder="Confirme su contraseña">
+
+
+        <div class="accesibilidad">
+
+            <h2>Preferencia de accesibilidad</h2>
+
+            <p>Elige la opción para ti</p>
+
+            <div class="opciones">
+
+                <label class="opcion">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/4836/4836896.png"
+                    alt="Discapacidad visual">
+
+                    <span>Discapacidad visual</span>
+
+                    <input type="radio"
+                           name="accesibilidad"
+                           value="visual">
+
+                </label>
+
+
+                <label class="opcion">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/4807/4807755.png"
+                    alt="Discapacidad auditiva">
+
+                    <span>Discapacidad auditiva</span>
+
+                    <input type="radio"
+                           name="accesibilidad"
+                           value="auditiva">
+
+                </label>
+
+
+                <label class="opcion">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/18001/18001532.png"
+                    alt="No requiero asistencia">
+
+                    <span>No requiero asistencia</span>
+
+                    <input type="radio"
+                           name="accesibilidad"
+                           value="ninguna">
+
+                </label>
+
+
+                <label class="opcion">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/10087/10087830.png"
+                    alt="Asistente de IA">
+
+                    <span>Asistente de IA</span>
+
+                    <input type="radio"
+                           name="accesibilidad"
+                           value="ia">
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <button class="boton" onclick="continuar()">
+            Continuar
+        </button>
+
+
+        <button class="boton" onclick="crearCuenta()">
+            Crear cuenta
+        </button>
+
+
+        <div class="cuenta">
+
+            <p>¿Ya tienes una cuenta?</p>
+
+            <a href="index.html">
+                Iniciar sesión
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function continuar() {
+
+            var opcion = document.querySelector(
+                'input[name="accesibilidad"]:checked'
+            );
+
+            if (!opcion) {
+                alert("Selecciona una opción de accesibilidad.");
+                return;
+            }
+
+            if (opcion.value === "visual") {
+                window.location.href = "accesibilidad.html";
+            }
+
+            if (opcion.value === "auditiva") {
+                window.location.href = "accesibilidad.html";
+            }
+
+            if (opcion.value === "ia") {
+                window.location.href = "asistente IA.html";
+            }
+
+            if (opcion.value === "ninguna") {
+                window.location.href = "inicio.html";
+            }
+
+        }
+
+
+        function crearCuenta() {
+
+            window.location.href = "inicio.html";
+
+        }
+
+    </script>
+    
+
+</body>
+</html>

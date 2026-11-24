@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi carrito - Estilo y Moda 365</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 20px;
+            padding-bottom: 80px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .carrito {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .producto {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .producto img {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .producto h2 {
+            margin: 8px 0;
+            font-size: 17px;
+        }
+
+        .precio {
+            font-weight: bold;
+            font-size: 15px;
+            margin: 6px 0;
+        }
+
+        .cantidad {
+            display: flex;
+            width: 105px;
+            height: 32px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        .cantidad button {
+            width: 35px;
+            background-color: white;
+            color: #222;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cantidad span {
+            width: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .resumen {
+            background-color: white;
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+
+        .fila {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .comprar {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        .comprar:hover {
+            background-color: #444;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 -2px 8px #ddd;
+        }
+
+        nav a {
+            background-color: #222;
+            color: white;
+            padding: 8px;
+            margin: 2px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: 11px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+            Mi carrito
+        </h1>
+
+    </header>
+
+
+    <section class="carrito">
+
+
+        <!-- VESTIDO -->
+
+        <div class="producto">
+
+            <img
+                src="https://tse4.mm.bing.net/th/id/OIP.iwDKBfVazAthI--LiVrcIQHaLh?r=0&pid=Api&h=220&P=0"
+                alt="Vestido casual">
+
+            <h2>
+                Vestido casual
+            </h2>
+
+            <p class="precio">
+                $89.900
+            </p>
+
+            <div class="cantidad">
+
+                <button>
+                    -
+                </button>
+
+                <span>
+                    1
+                </span>
+
+                <button>
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHAQUETA -->
+
+        <div class="producto">
+
+            <img
+                src="https://tse2.mm.bing.net/th/id/OIP.WfUzoa30Q0U1AmcBBKLcCQHaHa?r=0&pid=Api&h=220&P=0"
+                alt="Chaqueta de cuero">
+
+            <h2>
+                Chaqueta de cuero
+            </h2>
+
+            <p class="precio">
+                $129.900
+            </p>
+
+            <div class="cantidad">
+
+                <button>
+                    -
+                </button>
+
+                <span>
+                    1
+                </span>
+
+                <button>
+                    +
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESUMEN -->
+
+        <div class="resumen">
+
+            <div class="fila">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong>
+                    $219.900
+                </strong>
+
+            </div>
+
+
+            <div class="fila">
+
+                <span>
+                    Envío
+                </span>
+
+                <strong>
+                    $10.000
+                </strong>
+
+            </div>
+
+
+            <div class="fila total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong>
+                    $229.900
+                </strong>
+
+            </div>
+
+
+            <a
+                href="Envío.html"
+                class="comprar">
+
+                Comprar ahora
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <nav>
+
+        <a href="inicio.html">
+            Inicio
+        </a>
+
+        <a href="categorias.html">
+            Categorías
+        </a>
+
+        <a href="carrito.html">
+            Carrito
+        </a>
+
+        <a href="perfil.html">
+            Perfil
+        </a>
+
+        <a href="accesibilidad.html">
+            Accesibilidad
+        </a>
+
+    </nav>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
